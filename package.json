@@ -1,20 +1,25 @@
 {
-  "name": "react-boilerplate",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AliNisarAhmed/react-boilerplate.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/AliNisarAhmed/react-boilerplate/issues"
-  },
-  "homepage": "https://github.com/AliNisarAhmed/react-boilerplate#readme"
+	"name": "react-boilerplate",
+	"version": "0.1.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack"
+	},
+	"author": "",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AliNisarAhmed/react-boilerplate.git"
+	},
+	"keywords": [],
+	"bugs": {
+		"url": "https://github.com/AliNisarAhmed/react-boilerplate/issues"
+	},
+	"homepage": "https://github.com/AliNisarAhmed/react-boilerplate#readme",
+	"devDependencies": {
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	}
 }
