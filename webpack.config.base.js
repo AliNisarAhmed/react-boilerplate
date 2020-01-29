@@ -14,7 +14,16 @@ module.exports = {
 				loader: 'babel-loader',
 				exclude: /node_modules/,
 				options: {
-					presets: ['@babel/preset-env', '@babel/preset-react'],
+					presets: [['@babel/preset-env', {
+						targets: [
+							// run npx browserslist 'last 2 versions, not dead, not <2%' to fetch a list of browsers with the above conditions
+							'last 2 versions',
+							'not dead',
+							'not <2%',
+							'not ie 11'
+						],
+						useBuiltIns: 'entry'
+					}], '@babel/preset-react'],
 					plugins: [
 						'react-hot-loader/babel',
 						'@babel/plugin-proposal-class-properties'
